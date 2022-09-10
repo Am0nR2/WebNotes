@@ -33,9 +33,11 @@ function render(notes, NoteLinks){
 }
 
 deleteBtn.addEventListener("dblclick", function(){
-    localStorage.clear()
-    myNotes = []
-    myNoteLinks =[]
+    
+    myNotes.pop() 
+    myNoteLinks.pop() 
+    localStorage.setItem("myNotes", JSON.stringify(myNotes))
+    localStorage.setItem("myNoteLinks", JSON.stringify(myNoteLinks))
     render(myNotes, myNoteLinks)
 
 })
