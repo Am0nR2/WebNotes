@@ -2,11 +2,12 @@
     "manifest_version": 3,
     "version": "1.0",
     "name": "WebNotes",
+    "icons": {
+        "128": "Mylogo4.png" 
+    } ,
     "action": {
         "default_popup": "index.html",
         "default_icon": "Mylogo4.png"
-    },
-    "permissions": [
-        "tabs"
-    ]
+    }
+
 }
