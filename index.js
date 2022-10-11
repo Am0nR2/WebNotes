@@ -32,7 +32,7 @@ function render(notes, NoteLinks){
    noteArea.innerHTML = Notes
 }
 
-deleteBtn.addEventListener("dblclick", function(){
+deleteBtn.addEventListener("click", function(){
     
     myNotes.pop() 
     myNoteLinks.pop() 
